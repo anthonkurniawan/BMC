@@ -1,0 +1,216 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -30px;
+    padding: 0 0 40px;
+}
+
+.wrap > .container {
+  padding: 70px 15px 20px;
+	padding: 70px 15px 0px;
+}
+.wrap.wait, a.disabled{ pointer-events:none }
+body.wait { cursor:wait }
+
+.footer {
+    height: 30px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 5px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+.breadcrumb{
+	max-width: 30%;
+  min-width: 15%;
+  /* width: 25%; */
+}
+/*---------------------CUSTOM-------------------------*/
+.right {float:right !important;}
+.left {float:left !important;}
+.clear {clear:both;}
+#msg-con, .date-hide {display:none}
+#msg-con{width:67%}
+#msg-con .ui-icon{float:left;top:5px;margin-right:3px;}
+#msg-con .msg{width:90%}
+.auth{width:550px;margin:120px auto}
+.judul{padding:2px;white-space:nowrap}
+hr{border:1px solid #9ebbce;border-bottom:0}
+img.logo{width:83px;height:50px}
+img{border:none;vertical-align:middle; width:16px;height:16px}
+.box-bdr{padding:2px;border:1px solid #BDBDCA;border-bottom-color:#9797B1;border-left-color:#9797B1;overflow-x:auto}
+.loader {background:url("../images/loader/box_loading.gif") no-repeat;background-position:bottom;width:15px;display:none}
+.loader:before{content:"\00a0"}
+/* TABLE SUMM */
+table tr th{text-align:center}
+/* table.summary{border:1px solid black} */
+table.summary tr td{font-weight: bold;}
+table.summary tr td:first-child{width: 100px}
+table.summary tr td:last-child{padding-left:5px;font-weight: normal;}
+
+/* TABLE REPORT LIST */
+/* table.report tr th.head:first-child{width:60px} */
+#table_div table tr td, #table_div_dialog table tr td, table.report tr th {
+  padding:2px 5px;
+}
+#table_div {padding:0;transition: margin-top 0.5s ease;}
+#table_div, #table_div_dialog{
+  max-height:300px; overflow-x:hidden; overflow-y:auto; width:100%; margin-top:-2px;
+}
+table.list{border:1px solid #827878}
+table.report {border-spacing:1px;width:100%;border-collapse:collapse}
+table.report input, table.report select{width:100%}
+table.report tr td, table.report tr th{padding:2px 5px;font-size:11px; border:1px solid black;color:black}
+table.report tr.sizer td {border-bottom:none;}
+/*table.report tr:first-child td{border-top:none}*/
+table.report tr.filter td{min-width:75px;}
+/* table.report thead tr{background-color:#1484BF} */
+table.report thead tr, table.list thead{background-color:#c3dee4}
+/* table.report tr th{color:#FFFFFF;} */
+table.report tr th, table.list thead tr th a{color:black;}
+table.report tr.filter td{text-align:center;padding:2px;}
+table.report tr.filter td input, table.report tr.filter td select{padding:3px 0px;}
+table.report > tbody >tr >td{color:#003366;}
+table.report > tbody > tr:not(.filter){background-color:#DBE7F9}
+table.report > tbody > tr.time_marker { background-color:#ffa5009e!important}
+table.report > tbody > tr:nth-of-type(odd):not(.filter) {background-color:#E6F0FF}
+table.report>tbody>tr:not(.filter):hover{background-color:#F6F8FA}
+table.report tr.broken{background-color:#FF4700 !important;}
+table.report tr.broken td{color:white !important;}
+/* table.report.first{ margin-bottom:-5px;position:relative;border-color:white; } */
+table.report{border-color:black; }
+table.report tr.sizer td, table.report tr.sizer th{background:#ebe2e2;padding:0;margin:0}
+table.report tr.sizer th div{padding:0;margin:0}
+/* table.report tr th.head{max-height:70px} */
+/* table.report tr td.txtOk, table.report tr td.txtErr{font-size:11px;border-spacing:1px;} */
+table.report tr td.txtOk{text-align:right}
+table.report tr td.txtErr{text-align:center;color:#ff0000}
+table.report tr td.time, table.report tr th.time { text-align:center;max-width:70px }
+table.report tr td.timestamp, table.report tr th.timestamp { text-align:center;max-width:120px }
+table.list thead tr th, table.list thead tr td{border: 1px solid #827878}
+table.list tbody td{border-left: 1px solid #827878}
+table.list tr td:last-child{border-right: 1px solid #827878;}
+table.list tr:last-child td{border-bottom:1px solid #827878}
+table.his tr td { font-weight:bold }
+
+/* DATA TRENDS */
+table.report tr.sizer th.good{background:#33f133}
+table.report tr.sizer th.warning{background:#ff9005}
+table.report tr.sizer th.danger{background:#fd3535}
+
+table.dialog tr th{ padding:2px 5px }
+table.dialog tr.sizer{ display:none }
+table.dialog tr td{ padding:2px }
+#dialog-data{ padding:0 }
+.leader-line { z-index:200 }
+.ui-dialog .ui-dialog-titlebar { padding:2px 10px }
+.ui-widget-header{ background:#c3dee4 }
+div.tag-error{ margin-top:100px;height:200px}
+form#date-form input{text-align:center} 
+.cari-tanggal{margin-top:2px;}
+.custom-search span.pick{cursor:pointer;color:#1c2024;}
+
+/* BOOTSTRAP EXTEND */
+.btn-outline-primary {
+    color: #337ab7; /*#007bff;*/
+    background-color: transparent;
+    background-image: none;
+    border-color: #ddd; /*#1c2024;*/
+}
